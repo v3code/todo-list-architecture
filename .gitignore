@@ -9,7 +9,7 @@ nupkg/
 # Visual Studio Code
 .vscode
 
-# Rider
+# Pycharm
 .idea
 
 # User-specific files
