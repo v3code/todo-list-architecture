@@ -16,4 +16,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-app = "todo_list.app:main"
+app = "todo_list.main:main"

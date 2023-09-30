@@ -20,5 +20,18 @@ class FakeDB:
         self.id_counter.update({table_name: 1})
         self.db[table_name].append(model)
 
+
+    def update_data(self,
+                    table: str,
+                    idx: int,
+                    data: BaseModel):
+        data.set_id(self.db[table][idx].id)
+        self.db[table][idx] = data
+
+
+    def delete_data(self, table: str, idx: int):
+        self.db[table].pop(idx)
+
+
     def get_table(self, table):
         return self.db[table]
